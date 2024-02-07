@@ -10,11 +10,12 @@ import {
   View , Text
 } from 'react-native';
 import { Home } from './src/screens/home';
-
+import { List } from './src/screens/chats';
 const App = () => {
 
   return (
-    <Home />
+    // <Home />
+    <List />
   )
 }
 

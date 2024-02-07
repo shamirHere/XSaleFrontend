@@ -12,6 +12,8 @@ const icons = {
     plus : require("./icons/plus.png"),
     plus_white : require("./icons/plusWhite.png"),
     ads : require("./icons/ads.png"), 
-    person : require("./icons/person.png")
+    person : require("./icons/person.png"), 
+    arrow_back : require("./icons/arrow_back.png"), 
+    magnifyingGlass : require('./icons/magnifyingGlass.png')
 }; 
 export default icons; 

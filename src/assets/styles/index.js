@@ -354,6 +354,21 @@ const styles = StyleSheet.create({
     width: 40,
     resizeMode: 'contain',
   },
+  icon44: {
+    height: 44,
+    width: 44,
+    resizeMode: 'contain',
+  },
+  icon48: {
+    height: 48,
+    width: 48,
+    resizeMode: 'contain',
+  },
+  iconLarge : {
+    height : 64, 
+    width : 64, 
+    resizeMode : "contain"
+  }, 
 
   fw700: {fontWeight: '700'},
   fw400: {fontWeight: '400'},
