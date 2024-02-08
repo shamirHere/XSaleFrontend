@@ -13,7 +13,7 @@ const List = () => {
 
   return (
     <SafeAreaView style={[styles.pdh16,{height : "100%"}]}>
-        <TitleHeader />
+        <TitleHeader title={'Messages'}/>
         <InputText />
         <View style={[ styles.fdRow, styles.mt12, {height : "auto",  width : "100%"}]}>
           {

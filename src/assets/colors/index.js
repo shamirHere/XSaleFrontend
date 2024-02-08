@@ -6,6 +6,7 @@ const colors = {
     grey100 : "#efefef",
     grey800 : "#828282", 
     darkGrey : "#3C3C3C", 
+    lightGrey : '#EBEBEB', 
     sunsetOrange : "#ff5a5f", // welcome back color 
     grey700 : "#dedede", // search input background
     taupeGray : "#898989",  // view more color

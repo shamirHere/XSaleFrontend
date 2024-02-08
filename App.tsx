@@ -11,14 +11,16 @@ import {
 } from 'react-native';
 import { Home } from './src/screens/home';
 import { List } from './src/screens/chats';
+import { AddNewListing } from './src/screens/addNewListing';
+import { MyAds} from './src/screens/myAds';
+
 const App = () => {
 
   return (
     // <Home />
-    <List />
+    // <List />
+    // <AddNewListing />
+    <MyAds />
   )
-}
-
-
-
+}; 
 export default App;

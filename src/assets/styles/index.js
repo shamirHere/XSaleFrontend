@@ -193,6 +193,26 @@ const styles = StyleSheet.create({
   mv44: {marginVertical: 44},
   mv48: {marginVertical: 48},
 
+
+
+
+  // padding styles
+
+  p4: {padding: 4},
+  p8: {padding: 8},
+  p12: {padding: 12},
+  p16: {padding: 16},
+  p20: {padding: 20},
+  p24: {padding: 24},
+  p28: {padding: 28},
+  p32: {padding: 32},
+  p36: {padding: 36},
+  p40: {padding: 40},
+  p44: {padding: 44},
+  p48: {padding: 48},
+
+
+
   // PaddingTop styles
   pdt4: {paddingTop: 4},
   pdt8: {paddingTop: 8},
