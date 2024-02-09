@@ -14,6 +14,15 @@ const icons = {
     ads : require("./icons/ads.png"), 
     person : require("./icons/person.png"), 
     arrow_back : require("./icons/arrow_back.png"), 
-    magnifyingGlass : require('./icons/magnifyingGlass.png')
+    magnifyingGlass : require('./icons/magnifyingGlass.png'),
+    logout : require("./icons/logout.png"), 
+    delete : require("./icons/delete.png"), 
+    language : require("./icons/language.png"), 
+    question : require("./icons/question.png"),
+    suggestion : require("./icons/idea.png"),
+    privacy : require("./icons/privacy.png"), 
+    terms_condition : require("./icons/terms_condition.png"), 
+    invite_friend : require("./icons/invite_friend.png"),
+    rate_us : require("./icons/star.png")
 }; 
 export default icons; 

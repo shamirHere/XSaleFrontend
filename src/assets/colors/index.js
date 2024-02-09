@@ -7,11 +7,13 @@ const colors = {
     grey800 : "#828282", 
     darkGrey : "#3C3C3C", 
     lightGrey : '#EBEBEB', 
-    sunsetOrange : "#ff5a5f", // welcome back color 
+    grey500 : "#979797", 
+    lightOrange : "#ff5a5f", // welcome back color 
     grey700 : "#dedede", // search input background
     taupeGray : "#898989",  // view more color
     blackOlive : "#565454",  // price , new arrivals color
     lightPink : "#C1839F",// product company text color 
+    pink100 : "#ffedeb", 
     fleshTint : "#ff6363", 
     metallicSeaweed : "#08738b" // navigation tab indicator
 }; 

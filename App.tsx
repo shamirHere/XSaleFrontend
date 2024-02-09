@@ -13,6 +13,7 @@ import { Home } from './src/screens/home';
 import { List } from './src/screens/chats';
 import { AddNewListing } from './src/screens/addNewListing';
 import { MyAds} from './src/screens/myAds';
+import { Profile } from './src/screens/profile';
 
 const App = () => {
 
@@ -20,7 +21,8 @@ const App = () => {
     // <Home />
     // <List />
     // <AddNewListing />
-    <MyAds />
+    // <MyAds />
+    <Profile />
   )
 }; 
 export default App;

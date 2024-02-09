@@ -2,7 +2,7 @@ import { View, Text, ScrollView, SafeAreaView } from 'react-native'
 import React from 'react'
 import { BottomNavigation, TitleHeader, InputText, Button} from '../../component/shared'
 import styles from '../../assets/styles'
-import ChatCard from '../../component/Chats/ChatCard'
+import { ChatCard } from '../../component/Chats'
 
 const List = () => {
   const button = [
