@@ -14,6 +14,7 @@ import { List } from './src/screens/chats';
 import { AddNewListing } from './src/screens/addNewListing';
 import { MyAds} from './src/screens/myAds';
 import { Profile } from './src/screens/profile';
+import { Authentication , Location} from './src/screens/auth';
 
 const App = () => {
 
@@ -22,7 +23,9 @@ const App = () => {
     // <List />
     // <AddNewListing />
     // <MyAds />
-    <Profile />
+    // <Profile />
+    // <Authentication />
+    <Location />
   )
 }; 
 export default App;

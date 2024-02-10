@@ -23,6 +23,9 @@ const icons = {
     privacy : require("./icons/privacy.png"), 
     terms_condition : require("./icons/terms_condition.png"), 
     invite_friend : require("./icons/invite_friend.png"),
-    rate_us : require("./icons/star.png")
+    rate_us : require("./icons/star.png"),
+    phone : require("./icons/phone.png"), 
+    google : require("./icons/google.png"),
+    map : require("./icons/map.png")
 }; 
 export default icons; 

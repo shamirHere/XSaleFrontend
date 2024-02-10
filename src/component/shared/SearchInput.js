@@ -10,7 +10,7 @@ import colors from '../../assets/colors';
 import styles from '../../assets/styles';
 import icons from '../../assets/icons';
 
-const InputText = () => {
+const SearchInput = () => {
   return (
     <View
       style={[
@@ -46,4 +46,4 @@ const InputText = () => {
     </View>
   );
 };
-export default InputText;
+export default SearchInput;

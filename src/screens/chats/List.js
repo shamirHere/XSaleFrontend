@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, SafeAreaView } from 'react-native'
 import React from 'react'
-import { BottomNavigation, TitleHeader, InputText, Button} from '../../component/shared'
+import { BottomNavigation, TitleHeader, SearchInput, Button} from '../../component/shared'
 import styles from '../../assets/styles'
 import { ChatCard } from '../../component/Chats'
 
@@ -14,7 +14,7 @@ const List = () => {
   return (
     <SafeAreaView style={[styles.pdh16,{height : "100%"}]}>
         <TitleHeader title={'Messages'}/>
-        <InputText />
+        <SearchInput />
         <View style={[ styles.fdRow, styles.mt12, {height : "auto",  width : "100%"}]}>
           {
             button.map((item , index) => {
