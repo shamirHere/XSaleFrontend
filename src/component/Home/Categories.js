@@ -67,7 +67,6 @@ const Categories = () => {
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       {categoriesData.map((item, index) => {
-        console.log(item , index)
         return (
           <TouchableOpacity
             key={item.id}

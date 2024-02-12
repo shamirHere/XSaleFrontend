@@ -7,13 +7,16 @@ import styles from '../../assets/styles';
 import {
   HomeHeader,
   LocationInput,
-  Cat,
   Categories,
   SuggestionBox,
 } from '../../component/Home';
+import { Chats } from '../chats';
+import { AddNewListing } from '../addNewListing';
+import { MyAds } from '../myAds';
+import { Profile } from '../profile';
 import {BottomNavigation} from '../../component/shared';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <SafeAreaView style={[styles.pdh16, {borderWidth: 1, height: '100%'}]}>
       <HomeHeader />
@@ -24,7 +27,7 @@ const Home = () => {
             height: 115,
             paddingHorizontal: 16,
             width: '100%',
-            backgroundColor: colors.grey100,
+            backgroundColor: colors.grey700,
             borderRadius: 6,
           },
           styles.mt8,
@@ -40,7 +43,7 @@ const Home = () => {
             ]}>
             Categories
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Chats')} >
             <Text
               style={[
                 styles.fw700,

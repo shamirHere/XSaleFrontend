@@ -1,10 +1,20 @@
 import {View, Text, Image, TouchableOpacity} from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
 import styles from '../../assets/styles';
 import colors from '../../assets/colors';
 import icons from '../../assets/icons';
+import { Home } from '../../screens/home';
+import { Chats } from '../../screens/chats';
+import { AddNewListing } from '../../screens/addNewListing';
+import { MyAds } from '../../screens/myAds';
+import { Profile } from '../../screens/profile';
+import { useNavigation } from '@react-navigation/native';
 
 const BottomNavigation = () => {
+
+  // const Tab = createBottomTabNavigator(); 
+  const Navigation = useNavigation(); 
   return (
     <View
       style={[
@@ -22,13 +32,14 @@ const BottomNavigation = () => {
         styles.ml8,
         styles.fdRow,
       ]}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => Navigation.navigate("Home")}>
         <Image source={icons.home} style={[styles.icon28]} />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => Navigation.navigate("Chats")}>
         <Image source={icons.chats} style={[styles.icon28]} />
       </TouchableOpacity>
       <TouchableOpacity
+        onPress={() => Navigation.navigate('AddNewListing')}
         style={[
           {
             height: 50,
@@ -51,10 +62,10 @@ const BottomNavigation = () => {
         ]}>
         <Image source={icons.plus_white} style={[styles.icon28]} />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => Navigation.navigate('MyAds')}>
         <Image source={icons.ads} style={[styles.icon28]} />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => Navigation.navigate('Profile')}>
         <Image source={icons.person} style={[styles.icon28]} />
       </TouchableOpacity>
     </View>

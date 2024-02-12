@@ -9,10 +9,10 @@ import icons from '../../assets/icons';
 import styles from '../../assets/styles';
 import colors from '../../assets/colors';
 
-const TitleHeader = ({title}) => {
+const TitleHeader = ({title, onBackPress}) => {
   return (
     <View style={[styles.fdRow, styles.mt12, styles.mb4, {height: 50, width: '100%'}]}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={onBackPress}> 
         <Image source={icons.arrow_back} style={[styles.icon40 , styles.mt4]} />
       </TouchableOpacity>
       <Text

@@ -38,7 +38,7 @@ const HomeHeader = ({name}) => {
               styles.h5,
               {
                 fontSize: 15,
-                color: colors.sunsetOrange,
+                color: colors.fleshTint,
                 textAlign: 'center',
                 fontFamily: 'Fira Sans',
               },

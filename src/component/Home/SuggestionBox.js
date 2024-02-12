@@ -19,7 +19,7 @@ const SuggestionBox = ({title}) => {
           height:  '24%',
           paddingHorizontal: 16,
           width: '100%',
-          backgroundColor: colors.grey100,
+          backgroundColor: colors.grey700,
           borderRadius: 6,
         },
         styles.pdt8,

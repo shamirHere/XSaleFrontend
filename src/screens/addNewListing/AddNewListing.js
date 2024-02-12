@@ -5,11 +5,11 @@ import {CategoriesBox} from '../../component/addNewListing';
 import styles from '../../assets/styles';
 import colors from '../../assets/colors';
 
-const AddNewListing = () => {
+const AddNewListing = ({navigation}) => { 
   return (
     <SafeAreaView style={[{height: '100%'}]}>
       <View style={[styles.pdh16]}>
-        <TitleHeader title={'Add New Listing'} />
+        <TitleHeader title={'Add New Listing'} onBackPress={() => navigation.pop()}/>
       </View>
       <ScrollView
         style={[

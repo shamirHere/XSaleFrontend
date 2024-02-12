@@ -3,7 +3,7 @@ const colors = {
     silver : "#F5F5F5",
     black : "#000000", 
     grey50 : "#fafafa",
-    grey100 : "#efefef",
+    grey100 : "#E1E0E0",
     grey800 : "#828282", 
     darkGrey : "#3C3C3C", 
     lightGrey : '#EBEBEB', 

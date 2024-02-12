@@ -4,7 +4,7 @@ import { BottomNavigation, TitleHeader, SearchInput, Button} from '../../compone
 import styles from '../../assets/styles'
 import { ChatCard } from '../../component/Chats'
 
-const List = () => {
+const Chats = () => {
   const button = [
     {id : 1, label : 'All'},
     {id : 2, label : 'Buy'},
@@ -42,4 +42,4 @@ const List = () => {
   )
 }
 
-export default List; 
+export default Chats; 
