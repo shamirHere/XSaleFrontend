@@ -43,7 +43,7 @@ const Home = ({navigation}) => {
             ]}>
             Categories
           </Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Chats')} >
+          <TouchableOpacity onPress={() => navigation.navigate('AllCategories')} >
             <Text
               style={[
                 styles.fw700,

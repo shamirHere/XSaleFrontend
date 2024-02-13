@@ -23,8 +23,8 @@ const CategoriesBox = ({title, style}) => {
           styles.mt8,
           {height: '20%', width: '100%', justifyContent: 'space-between'},
         ]}>
-        <Text style={[styles.ts16, {color: colors.white}, styles.fw700]}>
-          {title ? title : 'Animal'}
+        <Text style={[styles.ts15, {color: colors.white , width : '70%', height : '200%'}, styles.fw700]}>
+          {title}
         </Text>
         <View
           style={[

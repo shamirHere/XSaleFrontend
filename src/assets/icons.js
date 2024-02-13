@@ -26,6 +26,16 @@ const icons = {
     rate_us : require("./icons/star.png"),
     phone : require("./icons/phone.png"), 
     google : require("./icons/google.png"),
-    map : require("./icons/map.png")
+    map : require("./icons/map.png"), 
+    cow : require("./icons/cow.png"),
+    smartphone : require("./icons/smartphone.png"),
+    bike : require("./icons/bike.png"),
+    electronics : require("./icons/electronics.png"), 
+    wedding : require("./icons/wedding.png"), 
+    furniture : require("./icons/furniture.png"),
+    hen : require("./icons/hen.png"), 
+    farmer : require("./icons/farmer.png"), 
+    services : require("./icons/service.png")
+
 }; 
 export default icons; 
