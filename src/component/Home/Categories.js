@@ -18,7 +18,7 @@ const Categories = () => {
     {id: 4, name: 'Bike', icon: icons.bike},
     {id: 5, name: 'Electronics', icon: icons.electronics},
     {id: 6, name: 'Jobs', icon: icons.suitcase},
-    {id: 7, name: 'Matrinomial', icon: icons.wedding},
+    {id: 7, name: 'Matrimonial', icon: icons.wedding},
     {id: 8, name: 'Furniture', icon: icons.furniture},
     {id: 9, name: 'Animal', icon: icons.cow},
     {id: 10, name: 'Puoltry & Birds', icon: icons.hen},
@@ -34,8 +34,13 @@ const Categories = () => {
             key={item.id}
             style={[
               styles.mr4,
-              {width: 'auto', height: '80%', marginTop: 3, alignItems: 'center'},
-              styles.mr16, 
+              {
+                width: 'auto',
+                height: '80%',
+                marginTop: 3,
+                alignItems: 'center',
+              },
+              styles.mr16,
               styles.mt4,
             ]}>
             <Image source={item.icon} style={styles.icon36} />

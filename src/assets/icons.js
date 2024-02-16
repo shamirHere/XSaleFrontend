@@ -35,7 +35,10 @@ const icons = {
     furniture : require("./icons/furniture.png"),
     hen : require("./icons/hen.png"), 
     farmer : require("./icons/farmer.png"), 
-    services : require("./icons/service.png")
+    services : require("./icons/service.png"), 
+    swap : require("./icons/swap.png"),
+    heart : require("./icons/heart.png"), 
+    rupee : require("./icons/rupee-indian.png")
 
 }; 
 export default icons; 

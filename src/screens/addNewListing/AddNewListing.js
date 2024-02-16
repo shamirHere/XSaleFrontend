@@ -13,7 +13,7 @@ const AddNewListing = ({navigation}) => {
     {id: 4, name: 'Bike',},
     {id: 5, name: 'Electronics',},
     {id: 6, name: 'Jobs',},
-    {id: 7, name: 'Matrinomial',},
+    {id: 7, name: 'Matrimonial',},
     {id: 8, name: 'Furniture',},
     {id: 9, name: 'Animal'},
     {id: 10, name: 'Puoltry & Birds',},

@@ -1,6 +1,6 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Home, AllCategories} from './src/screens/home';
+import {Home, AllCategories, ProductsListing, SelectOption } from './src/screens/home';
 import {Chats} from './src/screens/chats';
 import {AddNewListing} from './src/screens/addNewListing';
 import {MyAds} from './src/screens/myAds';
@@ -21,6 +21,14 @@ const App = () => {
         <Stack.Screen
           name="AllCategories"
           component={AllCategories}
+        />
+        <Stack.Screen 
+          name='SelectOption'
+          component={SelectOption}
+        />
+        <Stack.Screen 
+          name='ProductsListing'
+          component={ProductsListing}
         />
         <Stack.Screen
           name="Chats"

@@ -11,7 +11,7 @@ import colors from '../../assets/colors';
 import styles from '../../assets/styles';
 import images from '../../assets/images';
 
-const SuggestionBox = ({title}) => {
+const SuggestionBox = ({title}) => { 
   return (
     <View
       style={[
