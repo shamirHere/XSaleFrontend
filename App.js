@@ -1,10 +1,10 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Home, AllCategories, ProductsListing, SelectOption } from './src/screens/home';
-import {Chats} from './src/screens/chats';
+import {Chats, ChatScreen} from './src/screens/chats';
 import {AddNewListing} from './src/screens/addNewListing';
 import {MyAds} from './src/screens/myAds';
-import {Profile} from './src/screens/profile';
+import {Profile, ChangeInfo, GetHelp} from './src/screens/profile';
 import {Authentication, Location} from './src/screens/auth';
 
 
@@ -35,6 +35,10 @@ const App = () => {
           component={Chats}
         />
         <Stack.Screen
+          name="ChatScreen"
+          component={ChatScreen}
+        />
+        <Stack.Screen
           name="AddNewListing"
           component={AddNewListing}
         />
@@ -45,6 +49,14 @@ const App = () => {
         <Stack.Screen
           name="Profile"
           component={Profile}
+        />
+        <Stack.Screen 
+          name='ChangeInfo'
+          component={ChangeInfo}
+        />
+        <Stack.Screen 
+          name='GetHelp'
+          component={GetHelp}
         />
       </Stack.Navigator>
     </NavigationContainer>

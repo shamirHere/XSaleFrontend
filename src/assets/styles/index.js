@@ -400,6 +400,7 @@ const styles = StyleSheet.create({
       android: {fontSize: 22},
     }),
     fontWeight: 'bold',
+    color : colors.black
   },
 
   h2: {

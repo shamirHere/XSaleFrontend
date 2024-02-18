@@ -38,7 +38,10 @@ const icons = {
     services : require("./icons/service.png"), 
     swap : require("./icons/swap.png"),
     heart : require("./icons/heart.png"), 
-    rupee : require("./icons/rupee-indian.png")
-
+    rupee : require("./icons/rupee-indian.png"), 
+    call : require("./icons/call.png"), 
+    dots : require("./icons/dots.png"), 
+    send : require("./icons/send.png"), 
+    edit : require("./icons/edit.png")
 }; 
 export default icons; 

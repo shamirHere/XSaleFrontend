@@ -10,10 +10,10 @@ import {
   Categories,
   SuggestionBox,
 } from '../../component/Home';
-import { Chats } from '../chats';
-import { AddNewListing } from '../addNewListing';
-import { MyAds } from '../myAds';
-import { Profile } from '../profile';
+import {Chats} from '../chats';
+import {AddNewListing} from '../addNewListing';
+import {MyAds} from '../myAds';
+import {Profile} from '../profile';
 import {BottomNavigation} from '../../component/shared';
 
 const Home = ({navigation}) => {
@@ -43,7 +43,8 @@ const Home = ({navigation}) => {
             ]}>
             Categories
           </Text>
-          <TouchableOpacity onPress={() => navigation.navigate('AllCategories')} >
+          <TouchableOpacity
+            onPress={() => navigation.navigate('AllCategories')}>
             <Text
               style={[
                 styles.fw700,

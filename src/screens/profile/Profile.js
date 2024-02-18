@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   Image,
   TouchableWithoutFeedback,
+  Pressable,
 } from 'react-native';
 import {BottomNavigation} from '../../component/shared';
 import styles from '../../assets/styles';
@@ -12,14 +13,14 @@ import colors from '../../assets/colors';
 import icons from '../../assets/icons';
 import images from '../../assets/images';
 
-const Profile = () => {
+const Profile = ({navigation}) => {
+  console.log(navigation)
   const firstHeader = [
     {id: 1, icon: icons.logout, title: 'Logout'},
     {id: 2, icon: icons.delete, title: 'Delete Account'},
-    {id: 3, icon: icons.language, title: 'Change Language'},
   ];
   const secondHeader = [
-    {id: 1, icon: icons.question, title: 'Get Help'},
+    {id: 1, icon: icons.question, title: 'Get Help', navigate : "GetHelp"},
     {id: 2, icon: icons.suggestion, title: 'Send us Suggestion'},
     {id: 3, icon: icons.privacy, title: 'Privacy Policies'},
     {id: 4, icon: icons.terms_condition, title: 'Terms & Condition'},
@@ -45,9 +46,9 @@ const Profile = () => {
     );
   };
 
-  const Option = ({icon, title, id}) => {
+  const Option = ({icon, title, id, navigate}) => {
     return (
-      <View style={[styles.pdh16, {width: '100%', height: 45}]}>
+      <Pressable style={[styles.pdh16, {width: '100%', height: 45}]} onPress={() =>  navigation.navigate(navigate)}>
         <View style={[styles.fdRow, styles.mt8]}>
           <Image
             source={icon}
@@ -58,7 +59,7 @@ const Profile = () => {
         {id === 3 ? null : (
           <View style={[styles.mt12, {borderBottomWidth: 0.5}]}></View>
         )}
-      </View>
+      </Pressable>
     );
   };
 
@@ -86,7 +87,7 @@ const Profile = () => {
               123456789
             </Text>
           </View>
-          <TouchableWithoutFeedback>
+          <TouchableWithoutFeedback onPress={() => navigation.navigate('ChangeInfo')}>
             <Image
               source={icons.arrow_back}
               style={[
@@ -114,6 +115,7 @@ const Profile = () => {
                 title={item.title}
                 key={item.id}
                 id={item.id}
+                navigate={item.navigate}
               />
             );
           })}

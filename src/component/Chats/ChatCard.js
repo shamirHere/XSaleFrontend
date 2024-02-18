@@ -3,13 +3,17 @@ import {Image, Pressable, Text, TouchableOpacity, View} from 'react-native';
 import images from '../../assets/images';
 import styles from '../../assets/styles';
 import colors from '../../assets/colors';
+import {useNavigation} from '@react-navigation/native';
 
 const ChatCard = () => {
+  const Navigation = useNavigation();
   return (
-    <Pressable style={[styles.mb8, {elevation : 0.5, borderRadius : 3}]}>
+    <Pressable
+      style={[styles.mb8, {elevation: 0.5, borderRadius: 3}]}
+      onPress={() => Navigation.navigate('ChatScreen')}>
       <View
         style={[
-          {height: 75, width: '100%', borderRadius:12},
+          {height: 75, width: '100%', borderRadius: 12},
           styles.pdv8,
           styles.pdh12,
           styles.fdRow,
@@ -17,7 +21,7 @@ const ChatCard = () => {
         <Image
           source={images.profilePic}
           style={[
-            {borderRadius: 50, height: 56, width: 56, resizeMode: 'contain',},
+            {borderRadius: 50, height: 56, width: 56, resizeMode: 'contain'},
           ]}
         />
         <View style={[{width: '80%', height: '100%'}, styles.ml12]}>
