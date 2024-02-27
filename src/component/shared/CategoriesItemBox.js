@@ -4,7 +4,7 @@ import images from '../../assets/images';
 import styles from '../../assets/styles';
 import colors from '../../assets/colors';
 
-const CategoriesItemBox = ({style}) => {
+const CategoriesItemBox = ({style, itemName, image, all}) => {
   return (
     <Pressable
       style={[
@@ -13,20 +13,23 @@ const CategoriesItemBox = ({style}) => {
           width: 100,
           borderRadius: 12,
           padding: 6,
-          backgroundColor: colors.fleshTint,
+          backgroundColor: colors.metallicSeaweed,
+          justifyContent : all ? 'center' : null ,
+          alignItems : all ? "center" : null
         },
+        
         style,
       ]}>
-      <Image
-        source={images.profilePic}
+      { !all && <Image
+        source={image ? image : images.profilePic}
         style={[{height: '80%', width: '100%', borderRadius: 12}]}
-      />
+      />}
       <Text
         style={[
           styles.ts13,
           {marginTop: 2, textAlign: 'center', color: colors.white},
         ]}>
-        Cow Calf
+        {itemName ? itemName : "Name"}
       </Text>
     </Pressable>
   );
